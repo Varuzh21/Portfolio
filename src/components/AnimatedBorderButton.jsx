@@ -1,10 +1,10 @@
 export const AnimatedBorderButton = ({ children, link }) => {
-	const Component = link ? 'a' : 'button'
+	const Component = link ? 'a' : 'button';
 	return (
-		<Component 
-      href='/Varuzhan Grigoryan  CV.pdf'
-      download="Varuzhan Grigoryan CV"
-			className='relative bg-transparent border border-border 
+		<Component
+			href='/Varuzhan Grigoryan CV.pdf'
+			download='Varuzhan Grigoryan CV'
+			className='relative bg-transparent border border-border
         text-foreground hover:border-primary/50 transition-all 
         duration-1000 focus:outline-none focus-visible:ring-2 
         focus-visible:ring-primary focus-visible:ring-offset-2 
@@ -35,5 +35,5 @@ export const AnimatedBorderButton = ({ children, link }) => {
 				{children}
 			</span>
 		</Component>
-	)
-}
+	);
+};

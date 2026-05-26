@@ -1,32 +1,76 @@
 const experiences = [
 	{
-		period: '2025 – Present',
+		period: 'Feb 2026 – Present',
+		role: 'Frontend Developer',
+		company: 'GLSoft Company',
+		description:
+			'Working as a Frontend Developer at GLSoft Company, developing the Amragrum product by building scalable and responsive frontend applications with modern UI/UX practices. Implemented multilingual support (i18n), integrated backend APIs, and collaborated closely with the team to deliver secure, high-performance, and user-friendly web experiences.',
+		technologies: [
+			'TypeScript',
+			'Next Js',
+			'React',
+			'i18n',
+			'Tailwindcss',
+			'Axios',
+		],
+		current: false,
+	},
+	{
+		period: 'Aug 2025 – Feb 2026',
 		role: 'Frontend Developer',
 		company: 'Winners Club Armenia',
 		description:
 			'Developed the entire frontend of the Winners Club Armenia website from scratch, implementing a multilanguage (i18n) interface, building fully responsive and modern UI components, and ensuring a smooth, user-friendly experience across all devices. Created secure and intuitive authentication pages and collaborated with backend developers to integrate APIs and deliver high-performance frontend functionality.',
-		technologies: ['Next Js', 'TypeScript'],
+		technologies: [
+			'TypeScript',
+			'Next Js',
+			'React',
+			'React Native',
+			'i18n',
+			'Expo',
+			'Nest Js',
+			'Mongodb',
+			'Tailwindcss',
+			'Axios',
+		],
 		current: false,
 	},
 	{
-		period: '2024 — 2024',
+		period: 'Feb 2024 — Sep 2024',
 		role: 'Full Stack Developer',
 		company: 'Urartian LLC',
 		description:
 			'Developed responsive and user-friendly frontends for cinema (movie streaming, trailers, ticket booking) and shop applications, creating modern UI components aligned with current design standards. Integrated the frontend with backend services to ensure smooth data flow and reliable functionality. Implemented key features such as movie search, trailer viewing, e-ticket booking, and product browsing with cart functionality. Collaborated closely with cross-functional teams to deliver seamless, high-performance user experiences.',
-		technologies: ['Next Js', 'TypeScript', 'React', 'SAP UI5', 'CAP'],
+		technologies: [
+			'TypeScript',
+			'JavaScript',
+			'Next Js',
+			'React',
+			'Prisma',
+			'Tailwindcss',
+			'SAP UI5',
+			'CAP',
+		],
 		current: false,
 	},
 	{
-		period: '2023 — 2024',
+		period: 'Sep 2023 — Jan 2024',
 		role: 'Frontend Developer',
 		company: 'Techno-Educational Academy',
 		description:
 			'Developed the frontend of a cinema web application using modern technologies. Implemented features such as movie browsing, trailer viewing, and ticket booking. Built responsive, user-friendly UI components using React and optimized performance to deliver a smooth user experience. Integrated dynamic content and collaborated with designers and backend developers to ensure seamless end-to-end functionality.',
-		technologies: ['React', 'JavaScript'],
+		technologies: [
+			'JavaScript',
+			'React',
+			'Redux',
+			'Toolkit',
+			'Axios',
+			'CSS',
+			'SCSS',
+		],
 		current: false,
 	},
-]
+];
 
 export const Experience = () => {
 	return (
@@ -68,7 +112,7 @@ export const Experience = () => {
 
 				{/* Timeline */}
 				<div className='relative'>
-					<div className='timeline-glow absolute left-0 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary/70 via-primary/30 to-transparent md:-translate-x-1/2 shadow-[0_0_25px_rgba(32,178,166,0.8)]' />
+					<div className='timeline-glow absolute left-0 md:left-1/2 top-0 bottom-0 w-0.5 bg-linear-to-b from-primary/70 via-primary/30 to-transparent md:-translate-x-1/2 shadow-[0_0_25px_rgba(32,178,166,0.8)]' />
 
 					{/* Experience Items */}
 					<div className='space-y-12'>
@@ -126,5 +170,5 @@ export const Experience = () => {
 				</div>
 			</div>
 		</section>
-	)
-}
+	);
+};

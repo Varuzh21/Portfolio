@@ -1,5 +1,5 @@
-import { AnimatedBorderButton } from '@/components/AnimatedBorderButton'
-import { ArrowUpRight, Github } from 'lucide-react'
+import { AnimatedBorderButton } from '@/components/AnimatedBorderButton';
+import { ArrowUpRight, Github } from 'lucide-react';
 const projects = [
 	{
 		title: 'Web Chat App',
@@ -37,7 +37,7 @@ const projects = [
 		link: 'https://github.com/Varuzh21/ShopApp',
 		github: 'https://github.com/Varuzh21/ShopApp',
 	},
-]
+];
 
 export const Projects = () => {
 	return (
@@ -79,8 +79,8 @@ export const Projects = () => {
 									className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
 								/>
 								<div
-									className='absolute inset-0 
-                bg-gradient-to-t from-card via-card/50
+									className='absolute inset-0
+                bg-linear-to-t from-card via-card/50
                 to-transparent opacity-60'
 								/>
 								{/* Overlay Links */}
@@ -108,7 +108,7 @@ export const Projects = () => {
 										{project.title}
 									</h3>
 									<ArrowUpRight
-										className='w-5 h-5 
+										className='w-5 h-5
                   text-muted-foreground group-hover:text-primary
                   group-hover:translate-x-1 
                   group-hover:-translate-y-1 transition-all'
@@ -146,5 +146,5 @@ export const Projects = () => {
 				</div>
 			</div>
 		</section>
-	)
-}
+	);
+};

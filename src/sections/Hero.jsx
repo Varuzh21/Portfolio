@@ -1,12 +1,12 @@
-import { Button } from '@/components/Button'
+import { Button } from '@/components/Button';
 import {
 	ArrowRight,
 	ChevronDown,
 	Download,
 	Github,
 	Linkedin,
-} from 'lucide-react'
-import { AnimatedBorderButton } from '../components/AnimatedBorderButton'
+} from 'lucide-react';
+import { AnimatedBorderButton } from '@/components/AnimatedBorderButton';
 
 const skills = [
 	'Html',
@@ -26,7 +26,7 @@ const skills = [
 	'Cypress',
 	'Figma',
 	'Git',
-]
+];
 
 export const Hero = () => {
 	return (
@@ -38,7 +38,7 @@ export const Hero = () => {
 					alt='Hero image'
 					className='w-full h-full object-cover opacity-40'
 				/>
-				<div className='absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background' />
+				<div className='absolute inset-0 bg-linear-to-b from-background/20 via-background/80 to-background' />
 			</div>
 
 			{/* Green Dots */}
@@ -131,15 +131,15 @@ export const Hero = () => {
 					<div className='relative overflow-hidden'>
 						<div
 							className='absolute left-0 top-0 bottom-0 w-32
-             bg-gradient-to-r from-background to-transparent z-10'
+             bg-linear-to-r from-background to-transparent z-10'
 						/>
 						<div
 							className='absolute right-0 top-0 bottom-0 w-32
-             bg-gradient-to-l from-background to-transparent z-10'
+             bg-linear-to-l from-background to-transparent z-10'
 						/>
 						<div className='flex animate-marquee'>
 							{[...skills, ...skills].map((skill, idx) => (
-								<div key={idx} className='flex-shrink-0 px-8 py-4'>
+								<div key={idx} className='shrink-0 px-8 py-4'>
 									<span className='text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors'>
 										{skill}
 									</span>
@@ -151,11 +151,11 @@ export const Hero = () => {
 			</div>
 
 			<div
-				className='absolute bottom-8 left-1/2 -translate-x-1/2 
+				className='absolute bottom-8 left-1/2 -translate-x-1/2
       animate-fade-in animation-delay-800'
 			>
 				<a
-					href='#about'
+					href={'#about'}
 					className='flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group'
 				>
 					<span className='text-xs uppercase tracking-wider'>Scroll</span>
@@ -163,5 +163,5 @@ export const Hero = () => {
 				</a>
 			</div>
 		</section>
-	)
-}
+	);
+};
